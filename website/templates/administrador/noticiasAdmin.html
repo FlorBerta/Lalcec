@@ -1,0 +1,34 @@
+{% extends 'layoutAdmin.html' %}
+{% load static %}
+{% block content %}
+<body lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href= "{% static 'css/home.css' %}">
+  <title>Administrador Noticias</title>
+</head>
+<body>
+    <div class="offset-md">
+    <a class="btn btn-light" href="{% url 'website:homeAdministrador' %}">Volver</a>
+    <a class="btn btn-info" href="{% url 'website:nuevaNoticia' %}">Subir nueva noticia</a>
+    </div>
+
+    <div class="listaNoticias">
+
+        {% if noticias %}
+        {% for noticia in noticias %}
+        <p><h4>{{ noticia.titulo_noticia }}</h4><br>
+            <a class="btn btn-danger" href="{% url 'website:noticiasDelete' noticia.id_noticia %}">Eliminar Noticia</a>
+            <a class="btn btn-warning" href="{% url 'website:modificarNoticia' noticia.id_noticia %}">Modificar</a>
+        </p>
+        {% endfor %}
+  
+        {% else %}
+        <h2>No hay noticias</h2>
+  
+        {% endif %}
+    </div>
+</body>
+{% endblock %}

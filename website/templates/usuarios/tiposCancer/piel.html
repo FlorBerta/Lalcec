@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 	
+	<link rel="stylesheet" href= "{% static 'css/piel.css' %}">
+  <title>Lalcec Cda Gomez</title>
+  
+</head>
+<header>	
+    <!-- Barra de Navegacion -->
+    <div class="menu">
+      <!-- <img src="img/logo.jpg" alt=""> -->
+      <h1>Lalcec Cañada De Gomez</h1>
+      <nav>
+        <ul>
+          <li><a href="{% url 'website:Home' %}">Inicio</a></li>
+          <li><a href="{% url 'website:Informacion' %}">¿Quienes Somos?</a></li>
+          <li><a href="{% url 'website:noticias' %}">Noticias</a></li>
+          <!-- Revisar el hipervinculo de contacto cuando este listo -->
+          <li><a href="{% url 'website:eventos' %}">Eventos</a></li>
+          <li><a href="{% url 'website:formulario' %}">Donar</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+
+<body>
+  <div class="container">
+    <h1 class="maintitle">Cáncer de Piel</h1>
+
+    <p class="informacion">¿Sabías que más del 50% de los casos de melanoma en Argentina son por la exposición a rayos UV?</p>
+    
+    <h2 class="subtitle">¿Qué es?</h2>
+    <p class="texto">Es aquel que afecta las células cutáneas, 
+      principalmente por la exposición a los rayos ultravioletas. Se dividen en dos grupos: 
+      los melanomas y no melanomas. Es el tipo de cáncer más común.
+    </p>
+
+    <h2 class="subtitle">¿A quiénes afecta?</h2>
+    <p class="texto">El grupo de riesgo lo constituyen tanto hombres como mujeres. 
+      Algunos factores como los antecedentes familiares o el predomino de lunares en la piel no se pueden evitar. 
+      Sin embargo, la radiación ultravioleta si puede limitarse usando protector solar y evitando la exposición a lámparas y camas solares. 
+    </p>
+
+    <h2 class="subtitle">Sus síntomas</h2>
+    <p class="texto">
+      Los signos más comunes que produce el cáncer de piel se pueden detectar con la regla ABCDE:
+    </p>
+      <ul>
+        <li>Asimetria un lunar que no tenga forma ovalada.</li>
+        <li>Bordes irregulares y con picos</li>
+        <li>Color variado, no homogéneo</li>
+        <li>Diámetro mayor a 6mm</li>
+        <li>Evolución Cambio de aspecto en cuanto a tamaño , color o espesor</li>
+      </ul> 
+    <p  class="texto">
+      Ante cualquier lesión que presente alguna de estas características consultar con un dermatólogo. 
+    </p>
+
+    <h2 class="subtitle">¿Se puede detectar tempranamente?</h2>
+    <p class="texto">
+      Si, es posible llegar al diagnóstico precoz con los siguientes estudios: 
+    </p>
+      <ul>
+        <li>Control dermatológico anual</li>
+        <li>Prueba de imagen</li>
+        <li>Biopsia</li>
+        <li>Biopsia Autoexamen de lunares </li>
+      </ul>  
+      <br>
+    <p class="texto">
+      No reemplaza la consulta profesional.
+    </p>
+      
+
+
+    <h2 class="subtitle">¿Se puede prevenir el cáncer de piel?</h2>
+    <p class="texto">El sol es el principal causante del cáncer de piel. 
+      El 90 % de los casos pueden prevenirse siguiendo estas recomendaciones:
+      <ul>
+        <li>Bronceado: Recordá que el bronceado indica que el cuerpo ya alcanzó el límite de su exposición al sol.</li>
+        <li>Protector solar: Utilizá un protector solar de factor más elevado ( SPF 50+ ) y reaplicá cada 2 o 3 horas a lo largo del día o luego del baño o mojarte.</li>
+        <li>Exposición al sol: Evitá el sol entre las 10 y 16hs en épocas estivales y elegí lugares con sombra.</li>
+        <li>En menores de 1 año evitar completamente la exposición solar.</li>
+        <li>Rayos UV: No uses camas solares para broncearte.</li>
+        <li>Las dosis de UV artificiales se acumulan a las dosis de UV del sol y refuerzan el efecto cancerígeno.</li>
+        <li>Ropa liviana: Protegete con ropas livianas , sombreros y anteojos de sol.</li>
+        <li>Control dermatológico: Hacé tu control dermatológico anual.</li>
+      </ul>
+  </div>
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-2">
+      <p class="text-muted">
+        <h5>Lalcec Cañada de Gómez</h5>
+      </p>
+    </div>
+    <div class="col mb-2">
+      <ul class="nav flex-column">
+      <li class="nav-item mb-2">
+        <a href="{% url 'website:Informacion' %}" class="nav-link p-0 text-muted">Sobre Nosotros</a>
+      </li>
+      <li class="nav-item mb-2">
+        <a href="{% url 'website:formulario' %}" class="nav-link p-0 text-muted">Donar</a>
+      </li>
+      <li class="nav-item mb-2">
+      <a href="{% url 'website:noticias' %}" class="nav-link p-0 text-muted">Noticias</a>
+    </li>
+    <li class="nav-item mb-2">
+      <a href="{% url 'website:eventos' %}" class="nav-link p-0 text-muted">Eventos</a>
+    </li>
+      </ul>
+    </div>
+    <div class="col mb-2">
+			<ul class="nav flex-column">
+				<h5>Contáctanos</h5>
+			<li class="nav-item mb-2 text-muted">
+				Teléfono : 3741-112233
+			</li>
+			<li class="nav-item mb-2 text-muted">
+				Domicilio: Calle 123
+			</li>
+			<li class="nav-item mb-2 text-muted">
+				Correo Electrónico: lalcec@gmail.com
+			</li>
+			</ul>
+		  </div>
+      <div class="col mb-2">
+      <ul class="nav flex-column">
+        <h5>Nuestras Redes</h5>
+        <li class="nav-item mb-2">
+        <a href="#" class="nav-link p-0 text-muted">Facebook</a>
+      </li>
+        <li class="nav-item mb-2">
+        <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+      </li>
+      </ul>
+      </div>
+    </footer>
+  </div>
+   
+  </body>

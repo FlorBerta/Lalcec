@@ -1,0 +1,30 @@
+body{
+  background: #FFF2F0;
+}
+span{
+  font-size:10px;
+}
+a{
+text-decoration:none; 
+color: #f58b00;
+border-bottom:2px solid #ff4800;
+}
+.box{
+  padding:50px 0px;
+}
+
+.box-part{
+  background:rgb(230, 219, 219);
+  border-radius:10;
+  padding:50px 10px;
+  margin:30px 0px;
+}
+.text{
+  margin:20px 0px;
+}
+
+.fa{
+   color:#768394;
+}
+
+

@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href= "{% static 'css/home.css' %}">
+  <title>Donar</title>
+  
+</head>
+
+<body>
+    <div class="offset-md-1">
+
+    <p><div className="primerEncabezado">Completa el siguiente formulario para sumarte como socio/a. En breve estaremos en contacto. ¡Gracias!</div></p>
+    <p><div className="segundoEncabezado">Se solicita a LALCEC Cañada de Gómez como socio/a a:</div></p>
+    
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+
+        <button className="btnResetar" type="reset" class="btn btn-danger">Borrar Formulario</button>
+        <button className="btnEnviar" type="submit" class="btn btn-primary">Enviar Solicitud</button>
+    </form>
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-2">
+        <p class="text-muted">
+          <h5>Lalcec Cañada de Gómez</h5>
+        </p>
+      </div>
+      <div class="col mb-2">
+        <ul class="nav flex-column">
+        <li class="nav-item mb-2">
+          <a href="{% url 'website:Informacion' %}" class="nav-link p-0 text-muted">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="{% url 'website:formulario' %}" class="nav-link p-0 text-muted">Donar</a>
+        </li>
+        <li class="nav-item mb-2">
+        <a href="{% url 'website:noticias' %}" class="nav-link p-0 text-muted">Noticias</a>
+      </li>
+      <li class="nav-item mb-2">
+        <a href="{% url 'website:eventos' %}" class="nav-link p-0 text-muted">Eventos</a>
+      </li>
+        </ul>
+      </div>
+      <div class="col mb-2">
+        <ul class="nav flex-column">
+          <h5>Contáctanos</h5>
+        <li class="nav-item mb-2 text-muted">
+          Teléfono : 3741-112233
+        </li>
+        <li class="nav-item mb-2 text-muted">
+          Domicilio: Calle 123
+        </li>
+        <li class="nav-item mb-2 text-muted">
+          Correo Electrónico: lalcec@gmail.com
+        </li>
+        </ul>
+        </div>
+        <div class="col mb-2">
+        <ul class="nav flex-column">
+          <h5>Nuestras Redes</h5>
+          <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-muted">Facebook</a>
+        </li>
+          <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+        </li>
+        </ul>
+        </div>
+      </footer>
+    </div>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,197 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href= "{% static 'css/home.css' %}">
+  <title>Lalcec Cda Gomez</title>
+</head>
+
+<body>
+	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img src="static/img/p1.jpg" class="d-block w-100" alt="Banner1">
+		  </div>
+		  <div class="carousel-item">
+			<img src="static/img/p2.jpg" class="d-block w-100" alt="Banner2">
+		  </div>
+		  <div class="carousel-item">
+			<img src="static/img/p3.jpg" class="d-block w-100" alt="Banner3">
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previo</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Siguiente</span>
+		</button>
+	  </div>
+
+	<br>
+	<div class="informacion">
+	  <div class="card" style="width: 100%;">
+		<div class="card-body">
+		  <h5 class="card-title">Quiénes Somos</h5>
+		  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		  <a href="{% url 'website:Informacion' %}" class="card-link">Leer Más</a>
+		</div>
+	  </div>
+	</div>
+		<br>
+	<div class="eventos">
+	  <div class="card" style="width: 100%;">
+		<div class="card-body">
+		  <h5 class="card-title">Nuestros Eventos</h5>
+		  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		  <a href="{% url 'website:eventos' %}" class="card-link">Leer Más</a>
+		</div>
+	  </div>
+	</div>
+		<br>
+	<div class="noticias">
+	  <div class="card" style="width: 100%;">
+		<div class="card-body">
+		  <h5 class="card-title">Noticias</h5>
+		  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		  <a href="{% url 'website:noticias' %}" class="card-link">Leer Más</a>
+		</div>
+	  </div>
+	</div>
+	<div class="box">
+		<div class="container">
+			<h2>Que la palabra CÁNCER no nos de miedo</h2>
+			 <div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="box-part box-bg-warning text-center">
+							<div class="titleCard">
+								<h4>Cáncer de Colon</h4>
+							</div>
+							<a href="{% url 'website:Cancer de Colon' %}">Leer Más</a>
+						 </div>
+					</div>	 
+					
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="box-part box-bg-warning text-center">
+							<div class="titleCard">
+								<h4>Cáncer de Cuello de Útero</h4>
+							</div>
+							<a href="{% url 'website:Cancer de Cuello de Utero' %}">Leer Más</a>
+						 </div>
+					</div>	 	 
+					
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="box-part box-bg-warning text-center">
+							<div class="titleCard">
+								<h4>Cáncer de Mama</h4>
+							</div>
+							<a href="{% url 'website:Cancer de Mama' %}">Leer Más</a>
+						 </div>
+					</div>	 
+					
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="box-part box-bg-warning text-center">
+							<div class="titleCard">
+								<h4>Cáncer de Piel</h4>
+							</div>
+							<a href="{% url 'website:Cancer de Piel' %}">Leer Más</a>
+						 </div>
+					</div>	 	 
+					
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="box-part box-bg-warning text-center">
+							<div class="titleCard">
+								<h4>Cáncer de Próstata</h4>
+							</div>
+							<a href="{% url 'website:Cancer de Prostata' %}">Leer Más</a>
+						 </div>
+					</div>	 
+					
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="box-part box-bg-warning text-center">
+							<div class="titleCard">
+								<h4>Cáncer de Pulmón</h4>
+							</div>
+							<a href="{% url 'website:Cancer de Pulmon' %}">Leer Más</a>
+						 </div>
+					</div>	 
+			
+			</div>		
+		</div>
+	</div>
+	<div class="card" style="width: 100%;">
+		<div class="card-body">
+		  <h5 class="card-title">Cómo Sumarse</h5>
+		  <h6 class="card-subtitle mb-2 text-muted">Asocirase</h6>
+		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		  <a href="{% url 'website:noticias' %}" class="card-link">Leer Más</a>
+		</div>
+	  </div>
+
+
+	<div class="b-example-divider"></div>
+      
+	<div class="container">
+	  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+		<div class="col mb-2">
+		  <p class="text-muted">
+			  <h5>Lalcec Cañada de Gómez</h5>
+		  </p>
+		</div>
+		<div class="col mb-2">
+		  <ul class="nav flex-column">
+			<li class="nav-item mb-2">
+			  <a href="{% url 'website:Informacion' %}" class="nav-link p-0 text-muted">Sobre Nosotros</a>
+		  </li>
+		  <li class="nav-item mb-2">
+			  <a href="{% url 'website:formulario' %}" class="nav-link p-0 text-muted">Donar</a>
+		  </li>
+		  <li class="nav-item mb-2">
+			<a href="{% url 'website:noticias' %}" class="nav-link p-0 text-muted">Noticias</a>
+		</li>
+		<li class="nav-item mb-2">
+			<a href="{% url 'website:eventos' %}" class="nav-link p-0 text-muted">Eventos</a>
+		</li>
+		  </ul>
+		</div>
+		<div class="col mb-2">
+			<ul class="nav flex-column">
+				<h5>Contáctanos</h5>
+			<li class="nav-item mb-2 text-muted">
+				Teléfono : 3741-112233
+			</li>
+			<li class="nav-item mb-2 text-muted">
+				Domicilio: Calle 123
+			</li>
+			<li class="nav-item mb-2 text-muted">
+				Correo Electrónico: lalcec@gmail.com
+			</li>
+			</ul>
+		  </div>
+		  <div class="col mb-2">
+			<ul class="nav flex-column">
+				<h5>Nuestras Redes</h5>
+			<li class="nav-item mb-2">
+				<a href="#" class="nav-link p-0 text-muted">Facebook</a>
+			</li>
+			<li class="nav-item mb-2">
+				<a href="#" class="nav-link p-0 text-muted">Instagram</a>
+			</li>
+			</ul>
+		  </div>
+	  </footer>
+	</div>
+
+
+
+</body>
+</html>
+{% endblock %}

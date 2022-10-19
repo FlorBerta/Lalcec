@@ -1,0 +1,24 @@
+{% extends 'layoutAdmin.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href= "{% static 'css/home.css' %}">
+  <title>Eliminar Noticia</title>
+</head>
+<body>
+	<form method="post">
+		{% csrf_token %}
+		<h2>¿Desea eliminar definitoriamente la noticia {{ noticia.titulo_noticia }}?</h2>
+
+		<button class="btn btn-danger" type="submit">Sí, eliminar</button>
+		<a class="btn btn-default" href="{% url 'website:noticiasAdmin' %}">Cancelar</a>
+	</form>
+
+</body>
+</html>
+{% endblock %}

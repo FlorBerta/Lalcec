@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 	
+	<link rel="stylesheet" href= "{% static 'css/mama.css' %}">
+  <title>Lalcec Cda Gomez</title>
+  
+</head>
+<header>	
+    <!-- Barra de Navegacion -->
+    <div class="menu">
+      <!-- <img src="img/logo.jpg" alt=""> -->
+      <h1>Lalcec Cañada De Gomez</h1>
+      <nav>
+        <ul>
+          <li><a href="{% url 'website:Home' %}">Inicio</a></li>
+          <li><a href="{% url 'website:Informacion' %}">¿Quienes Somos?</a></li>
+          <li><a href="{% url 'website:noticias' %}">Noticias</a></li>
+          <!-- Revisar el hipervinculo de contacto cuando este listo -->
+          <li><a href="{% url 'website:eventos' %}">Eventos</a></li>
+          <li><a href="{% url 'website:formulario' %}">Donar</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+
+<body>
+  <div class="container">
+    <h1 class="maintitle">Cáncer de Mama</h1>
+
+    <p class="informacion">¿Sabías que 1 de cada 8 mujeres tendrá cáncer de mama en algún momento de su vida</p>
+    
+    <h2 class="subtitle">¿Qué es?</h2>
+    <p class="texto">Es un tumor maligno que se origina en el tejido de las glándulas mamarias. </p>
+
+    <h2 class="subtitle">¿Cómo se detecta?</h2>
+    <p class="texto">
+      <ul>
+        <li>Mamografía: Es capaz de detectar lesiones en estados incipientes de la enfermedad. La dosis de radiación empleada en la mamografía es mínima, por lo que resulta inofensiva.</li>
+        <li>Ecografía mamaria: En mujeres jóvenes y con mamas densas, el especialista puede sugerir como complemento una ecografía mamaria. </li> 
+        <li>Autoexamen mamario: También es recomendable realizarse mensualmente el autoexamen y en caso de palpar u observar alguna anomalía recurrir a una consulta con un especialista.</li> <br>
+        Recordá que el autoexamen no reemplaza la mamografía que es capaz de detectar lesiones cuando son aún imperceptibles.
+      </ul>
+    </p>  
+
+    <h2 class="subtitle">¿A quiénes afecta?</h2>
+    <p class="texto">
+      El cáncer de mama es el tumor más frecuente en mujeres. Existen algunos factores de riesgo o condiciones que aumentan la posibilidad de padecer esta enfermedad. Estos son:
+      </p> 
+      <ul>
+        <li>Sexo: La mujer tiene mayor riesgo de desarrollar cáncer de mama. Solo el 1 % de los casos se presenta en hombres.</li>
+        <li>Edad: El riesgo aumenta con ella, por eso se sugiere hacer el chequeo a partir de los 40 años.</li>
+        <li>Antecedentes personales: Pacientes que hayan padecido cáncer de mama o que se hayan realizado biopsias mamarias con anomalías.</li>
+        <li>Antecedentes familiares: Familiares de primer y segundo grado que hayan tenido cáncer de mama.</li>
+        <li>Factores relacionados con la reproducción y menstruación: Mujeres con menopausia después de los 55 años o primera menstruación antes de los 12 años.</li>
+        <li>Embarazo y lactancia: No haber tenido embarazos o primer embarazo después de los 30 años y ausencia de lactancia.</li>
+        <li>Mama densa.</li>
+        <li>Obesidad o sobrepeso</li>
+        <li>Consumo excesivo de alcohol</li>
+        <li>Tabaquismo</li>
+      </ul> 
+
+    <h2 class="subtitle">¿Cuáles son sus síntomas?</h2>
+    <p class="texto">
+      En sus fases iniciales, el cáncer de mama no suele producir ningún tipo de síntoma, pero a media que el tumor crece, puede cambiar la forma como se ve y se siente la mama. 
+      <br>
+      Los cambios más comunes son:
+    </p>
+      <ul>
+        <li>Bulto, nódulo o engrosamiento en el seno, cerca del mismo o en la axila.</li>
+        <li>Cambios en el tamaño o forma de alguna de las mamas.</li>
+        <li>Cambios en el pezón como hundimientos o segregación de fluidos o sangre.</li>
+        <li>Alteraciones en la piel de la mama, del pezón o de la aureola como aparición de úlceras, cambios de color y lo que se denomina naranja.</li>
+        <li>Menor movilidad de una de las mamas al levantar los brazos.</li>
+        <li>Dolor en la mama a la palpación.</li>
+      </ul>  
+
+      <h2 class="subtitle">¿Quiénes y cuándo deberían hacerse los controles preventivos?</h2>
+      <p class="texto">
+        Todas las mujeres a partir de los 40 años de edad deben realizarse su primera mamografía. Luego repetirla anualmente según indicaciones del profesional. Las mujeres quue padecen alguno de los factores de riesgo del cáncer de mama, deben concurrir en edad temprana al médico y, según la indicación, pueden llegar a realizarse mamografía antes de los 40 años.
+      </p>
+    
+    <h2 class="subtitle">¿Por qué es necesario el diagnóstico precoz?</h2>
+    <p class="texto">
+      Mientras más temprano se detecte el cáncer de mama, mejores son las probabilidades de que el tratamiento tenga éxito. El cáncer de mama es una de las pocas enfermedades cancerosas que se pueden diagnosticar precozmente; es decir, antes de que se note algún síntoma. Las posibilidades de curación de los cánceres de mama que se detectan en su etapa inicial son más del 90%.
+    </p>
+
+    <h2 class="subtitle">¿Se puede prevenir?</h2>
+    <p class="texto">
+      El cáncer es en gran medida prevenible y tiene un carácter multi factorial ya que no se genera por una sola causa. Tiene hábitos saludables que reduce hasta un 40% las posibilidadesde desarrollar cualquier tipo de cáncer por lo que es importante seguir los siguientes consejos:
+      <ul>
+        <li>Alimentación saludable: incorporando frutas, semillas, verduras, cereales y alimentos con bajo contenido graso.</li>
+        <li>Evitar el sobrepeso</li>
+        <li>Realizar actividad física regularmente: 40 minutos por día, 5 veces por semana.
+          <li>No fumar.</li>
+          <li>Evitar el consumo de alcohol.</li>
+          <li>Realizar controles anuales de salud.</li>
+        </li>
+      </ul>
+    </p>
+  </div>
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-2">
+      <p class="text-muted">
+        <h5>Lalcec Cañada de Gómez</h5>
+      </p>
+    </div>
+    <div class="col mb-2">
+      <ul class="nav flex-column">
+      <li class="nav-item mb-2">
+        <a href="{% url 'website:Informacion' %}" class="nav-link p-0 text-muted">Sobre Nosotros</a>
+      </li>
+      <li class="nav-item mb-2">
+        <a href="{% url 'website:formulario' %}" class="nav-link p-0 text-muted">Donar</a>
+      </li>
+      <li class="nav-item mb-2">
+      <a href="{% url 'website:noticias' %}" class="nav-link p-0 text-muted">Noticias</a>
+    </li>
+    <li class="nav-item mb-2">
+      <a href="{% url 'website:eventos' %}" class="nav-link p-0 text-muted">Eventos</a>
+    </li>
+      </ul>
+    </div>
+    <div class="col mb-2">
+			<ul class="nav flex-column">
+				<h5>Contáctanos</h5>
+			<li class="nav-item mb-2 text-muted">
+				Teléfono : 3741-112233
+			</li>
+			<li class="nav-item mb-2 text-muted">
+				Domicilio: Calle 123
+			</li>
+			<li class="nav-item mb-2 text-muted">
+				Correo Electrónico: lalcec@gmail.com
+			</li>
+			</ul>
+		  </div>
+      <div class="col mb-2">
+      <ul class="nav flex-column">
+        <h5>Nuestras Redes</h5>
+        <li class="nav-item mb-2">
+        <a href="#" class="nav-link p-0 text-muted">Facebook</a>
+      </li>
+        <li class="nav-item mb-2">
+        <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+      </li>
+      </ul>
+      </div>
+    </footer>
+  </div>
+  </body>

@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 	
+	<link rel="stylesheet" href= "{% static 'css/colon.css' %}">
+  <title>Lalcec Cda Gomez</title>
+  
+</head>
+<header>	
+    <!-- Barra de Navegacion -->
+    <div class="menu">
+      <!-- <img src="img/logo.jpg" alt=""> -->
+      <h1>Cáncer de Colon</h1>
+      <nav>
+        <ul>
+          <li><a href="{% url 'website:Home' %}">Inicio</a></li>
+          <li><a href="{% url 'website:Informacion' %}">¿Quienes Somos?</a></li>
+          <li><a href="{% url 'website:noticias' %}">Noticias</a></li>
+          <!-- Revisar el hipervinculo de contacto cuando este listo -->
+          <li><a href="{% url 'website:eventos' %}">Eventos</a></li>
+          <li><a href="{% url 'website:formulario' %}">Donar</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+
+<body>
+  <div class="container">
+    <h1 class="maintitle">Cáncer de Colon</h1>
+
+    <p class="informacion">¿Sabías que el 90% de los casos de Cáncer de Colon se pueden curar si es detectado a tiempo?</p>
+    
+    <h2 class="subtitle">¿Qué es?</h2>
+    <p class="texto">El cáncer de colon es un tipo de cáncer que comienza en el intestino grueso (colon). 
+      Es causado por el crecimiento anormal de las células que revisten al coloon y recto, estos son definidos como pólipos y suelen ser benignos,
+      aunque algunos al desarrollarse pasan a ser malignos.
+      Como suelen tardar en dasarrollarse es posible detectarlos tempranamente haciendo controles cada año.</p>
+
+    <h2 class="subtitle">¿A quiénes afecta?</h2>
+    <p class="texto">El grupo de riesgo constituyen los hombres y mujeres mayores de 50 años. 
+      Otros factores de riesgo son los antecedentes familiares, tener irritación del colon o alguna afección genética con tendencia a la formación de pólipos colorrectales.
+    <br><br>
+      Si posees algún factor de riesgo de los mencionados comentalo con tu médico para que te indique un seguimiento regular y determinar así la peridicidad de los controles. </p>
+
+    <h2 class="subtitle">Sus síntomas</h2>
+    <p class="texto">
+      Las manifestaciones clínicas del cáncer de colon pueden ser asintomáticas en su fase temprana, sin embargo, los síntomas más comunes que produce son:
+    </p>
+      <ul>
+        <li>Sangrado rectal</li>
+        <li>Anemia</li>
+        <li>Pérdida de peso</li>
+        <li>Bulto en el abdomen o recto</li>
+        <li>Dolores abdominales o rectales frecuentes</li>
+        <li>Cambios en los hábitos intestinales</li>
+      </ul>  
+    <p class="texto">
+      Recordá que los síntomas mencionados no son específicos del cáncer de colon popr lo que ante cualquier manifestación consultá con un médico para un diagnóstico apropiado. 
+    </p>
+
+    <h2 class="subtitle">¿Se puede detectar tempranamente?</h2>
+    <p class="texto">
+      Si, es posible llegar al diagnóstico precoz con algunos de los siguientes estudios:
+    </p>
+      <ul>
+        <li>Examen físico</li>
+        <li>Colonoscopia</li>
+        <li>Radiografía de colon y recto</li>
+        <li>Biopsia</li>
+        <li>Sigmoidoscopia</li>
+      </ul>  
+    <p class="texto"> 
+      Debe visitar al médico una vez por año a partir de los 50 años para que le indique el mejor estudio según su caso particular.
+    </p>
+
+    <h2 class="subtitle">¿Se puede prevenir el cáncer de colon?</h2>
+    <p class="texto">Cuanto más pequeño es el tumor, mayores son las posibilidades de tratamientos menos invasivos. Detectado a tiempo, la posibilidad de cura del cáncer de colon supera el 90%.
+    <br>
+    Algunos factores de riesgo no se pueden evitar. Sin embargo es muy importante, sobre todo en este tipo de cáncer, mantener un estilo de vida saludable. 
+    A partir de los 50 años visitá tu médico anualmente para que te indique los estudios de detección y adoptá hábitos saludables para mejorar la calidad de vida.
+    </p>
+  </div>
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-2">
+      <p class="text-muted">
+        <h5>Lalcec Cañada de Gómez</h5>
+      </p>
+    </div>
+    <div class="col mb-2">
+      <ul class="nav flex-column">
+      <li class="nav-item mb-2">
+        <a href="{% url 'website:Informacion' %}" class="nav-link p-0 text-muted">Sobre Nosotros</a>
+      </li>
+      <li class="nav-item mb-2">
+        <a href="{% url 'website:formulario' %}" class="nav-link p-0 text-muted">Donar</a>
+      </li>
+      <li class="nav-item mb-2">
+      <a href="{% url 'website:noticias' %}" class="nav-link p-0 text-muted">Noticias</a>
+    </li>
+    <li class="nav-item mb-2">
+      <a href="{% url 'website:eventos' %}" class="nav-link p-0 text-muted">Eventos</a>
+    </li>
+      </ul>
+    </div>
+    <div class="col mb-2">
+			<ul class="nav flex-column">
+				<h5>Contáctanos</h5>
+			<li class="nav-item mb-2 text-muted">
+				Teléfono : 3741-112233
+			</li>
+			<li class="nav-item mb-2 text-muted">
+				Domicilio: Calle 123
+			</li>
+			<li class="nav-item mb-2 text-muted">
+				Correo Electrónico: lalcec@gmail.com
+			</li>
+			</ul>
+		  </div>
+      <div class="col mb-2">
+      <ul class="nav flex-column">
+        <h5>Nuestras Redes</h5>
+        <li class="nav-item mb-2">
+        <a href="#" class="nav-link p-0 text-muted">Facebook</a>
+      </li>
+        <li class="nav-item mb-2">
+        <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+      </li>
+      </ul>
+      </div>
+    </footer>
+  </div>
+  </body>

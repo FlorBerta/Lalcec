@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 	
+	<link rel="stylesheet" href= "{% static 'css/pulmon.css' %}">
+  <title>Lalcec Cda Gomez</title>
+  
+</head>
+<header>	
+    <!-- Barra de Navegacion -->
+    <div class="menu">
+      <!-- <img src="img/logo.jpg" alt=""> -->
+      <h1>Lalcec Cañada De Gomez</h1>
+      <nav>
+        <ul>
+          <li><a href="{% url 'website:Home' %}">Inicio</a></li>
+          <li><a href="{% url 'website:Informacion' %}">¿Quienes Somos?</a></li>
+          <li><a href="{% url 'website:noticias' %}">Noticias</a></li>
+          <!-- Revisar el hipervinculo de contacto cuando este listo -->
+          <li><a href="{% url 'website:eventos' %}">Eventos</a></li>
+          <li><a href="{% url 'website:formulario' %}">Donar</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+
+<body>
+  <div class="container">
+    <h1 class="maintitle">Cáncer de Pulmón</h1>
+
+    <p class="informacion">¿Sabías que 9 de 10 personas con cáncer de pulmón, son o fueron fumadores?</p>
+    
+    <h2 class="subtitle">¿Qué es?</h2>
+    <p class="texto">Es el crecimiento descontrolado de células anormales que se originan en los tejidos pulmonares. Hay dos tipos: cáncer de pulmón de células no pequeñas y cáncer de pulmón de células pequeñas. Fumar es el principal factor de riesgo y causa la mayoría de los cánceres de pulmón, pero los fumadores pasivos también pueden enfermarse.</p>
+
+    <h2 class="subtitle">¿A quiénes afecta?</h2>
+    <p class="texto">El grupo de riesgo lo constituyen tanto hombres y mujeres principalmente aquellos que son fumadores y convivientes de quien fuma, los mayores de 65 años y quienes tienen antecedentes familiares o enfermedades pulmonares crónicas. Otros factores de riesgo son la contaminación ambiental y la exposición a sustancias nocivas. 
+
+    </p>
+
+    <h2 class="subtitle">Sus síntomas</h2>
+    <p class="texto">
+      El cáncer de pulmón en sus primeros estadios suele ser asintomático y las manifestaciones clínicas que genera muchas veces son poco específicas, ante cualquiera de los siguientes síntomas concurrí al médico:
+      </p>
+      <ul>
+        <li>Tos persistente</li>
+        <li>Dificultad para respirar</li>
+        <li>Tos con sangre o flema de color oxidado</li>
+        <li>Infecciones como bronquitis y neumonía recurrentes</li>
+        <li>Dolor en el pecho que empeora cuando respira profundamente , tose o se rie</li>
+        <li>Silbido de pecho</li>
+        <li>Perdida de apetito o de peso inexplicable</li>
+        <li>Cambios en la voz</li>
+      </ul>
+
+
+    <h2 class="subtitle">¿Se puede detectar tempranamente?</h2>
+    <p class="texto">
+      Es uno de los más difíciles a la hora de detectarlos tempranamente, pero se pueden realizar diagnósticos con estudios por imágenes según indicación médica como radiografía torácica o tomografia de baja radiación. Es importante que si presentas algún factor de riesgo, tenés entre 50 y 80 años y sos o fuiste fumador durante más de 15 años, concurrí al médico para tu control una vez por año. El profesional va a indicarte cual es el mejor estudio para vos.
+    </p>
+
+    <h2 class="subtitle">¿Se puede prevenir el cáncer de colon?</h2>
+    <p class="texto">Cuanto más pequeño es el tumor, mayores son las posibilidades de tratamientos menos invasivos. Detectado a tiempo, la posibilidad de cura del cáncer de colon supera el 90%.
+    <br>
+    La mejor manera de prevenirlo es sin fumar o dejando de hacerlo. El tabaco es responsable del 84 % de las muertes por cáncer de pulmón y cada día que se pasa sin fumar trae beneficios a la salud.
+    </p>
+
+  </div>
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-2">
+      <p class="text-muted">
+        <h5>Lalcec Cañada de Gómez</h5>
+      </p>
+    </div>
+    <div class="col mb-2">
+      <ul class="nav flex-column">
+      <li class="nav-item mb-2">
+        <a href="{% url 'website:Informacion' %}" class="nav-link p-0 text-muted">Sobre Nosotros</a>
+      </li>
+      <li class="nav-item mb-2">
+        <a href="{% url 'website:formulario' %}" class="nav-link p-0 text-muted">Donar</a>
+      </li>
+      <li class="nav-item mb-2">
+      <a href="{% url 'website:noticias' %}" class="nav-link p-0 text-muted">Noticias</a>
+    </li>
+    <li class="nav-item mb-2">
+      <a href="{% url 'website:eventos' %}" class="nav-link p-0 text-muted">Eventos</a>
+    </li>
+      </ul>
+    </div>
+    <div class="col mb-2">
+			<ul class="nav flex-column">
+				<h5>Contáctanos</h5>
+			<li class="nav-item mb-2 text-muted">
+				Teléfono : 3741-112233
+			</li>
+			<li class="nav-item mb-2 text-muted">
+				Domicilio: Calle 123
+			</li>
+			<li class="nav-item mb-2 text-muted">
+				Correo Electrónico: lalcec@gmail.com
+			</li>
+			</ul>
+		  </div>
+      <div class="col mb-2">
+      <ul class="nav flex-column">
+        <h5>Nuestras Redes</h5>
+        <li class="nav-item mb-2">
+        <a href="#" class="nav-link p-0 text-muted">Facebook</a>
+      </li>
+        <li class="nav-item mb-2">
+        <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+      </li>
+      </ul>
+      </div>
+    </footer>
+  </div>
+  </body>

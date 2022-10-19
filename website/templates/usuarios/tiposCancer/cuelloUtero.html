@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 	
+	<link rel="stylesheet" href= "{% static 'css/cuelloutero.css' %}">
+  <title>Cáncer Cuello de Útero</title>
+  
+</head>
+<header>	
+    <!-- Barra de Navegacion -->
+    <div class="menu">
+      <!-- <img src="img/logo.jpg" alt=""> -->
+      <h1>Lalcec Cañada De Gomez</h1>
+      <nav>
+        <ul>
+          <li><a href="{% url 'website:Home' %}">Inicio</a></li>
+          <li><a href="{% url 'website:Informacion' %}">¿Quienes Somos?</a></li>
+          <li><a href="{% url 'website:noticias' %}">Noticias</a></li>
+          <!-- Revisar el hipervinculo de contacto cuando este listo -->
+          <li><a href="{% url 'website:eventos' %}">Eventos</a></li>
+          <li><a href="{% url 'website:formulario' %}">Donar</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+
+<body>
+  <div class="container">
+    <h1 class="maintitle">Cáncer de Cuello de Útero</h1>
+
+    <p class="informacion">¿Sabías que el 93% de los casos de Cáncer de útero se pueden prevenir realizando un control ginecológico anual?</p>
+    
+    <h2 class="subtitle">¿Qué es?</h2>
+    <p class="texto">El cáncer de cuello de útero, a veces denominado "cáncer cervical" o "cáncer de cervix", 
+      es una enfermedad en la cual se produce un crecimiento anormal de células tumorales en los tejidos del cuello 
+      uterino. La principal causa del cáncer de cuello uterino es el VPH (Virus del Papiloma Humano). 
+      El VPH es un grupo de más de 150 virus que se transmite generalmente a través de las relaciones sexuales.
+    </p>
+
+    <h2 class="subtitle">¿A quiénes afecta?</h2>
+    <p class="texto">El grupo de riesgo lo constituyen principalmente las mujeres sexualmente activas con infección
+      por VPH. Los hombres también pueden tener el virus y ser transmisores de la enfermedad por lo que es 
+      fundamental que todos se realicen los controles anuales para detectar el virus y tratarlo 
+      lo antes posible Un factor de riesgo evitable es el tabaquismo ya que está asociado con este tipo de cáncer. 
+    </p>
+
+    <h2 class="subtitle">Sus síntomas</h2>
+    <p class="texto">
+      El cáncer de cuello de útero generalmente no presenta síntomas en etapas tempranas. Cuando esto ocurre, los signos de alerta más comunes son:
+    </p>
+      <ul>
+        <li>Sangrado vaginal anormal</li>
+        <li>Secreción vaginal inusual</li>
+        <li>Dolor pelvice y/o sangrado durante las relaciones sexuales. </li>
+      </ul> 
+
+
+    <h2 class="subtitle">¿Se puede detectar tempranamente?</h2>
+    <p class="texto">
+      Es altamente detectable ya que una lesión provocada por VPH tarda entre 10 y 20 años en desarrollar 
+      cáncer por lo que puede detectarse con mucha anticipación con los controles anuales antes de tener 
+      algún síntoma. Las revisiones ginecológicas anuales donde se realizan el test de Papanicolau 
+      (PAP) y la colposcopía permiten el diagnóstico de las lesiones premalignas, de tal forma que su tratamiento 
+      evita que estas progresen y se hagan invasivas. Se recomienda que se realicen el PAP todas las mujeres a partir 
+      de la primera relación sexual y especialmente aquellas entre 35 y 64 años. 
+      Además, podés hacerte el Test de VPH desde los 30 años.
+      </p>
+
+    <h2 class="subtitle">¿Se puede prevenir el cáncer de cuello de Útero?</h2>
+    <p class="texto">
+      Te contamos las acciones que pueden ayudarte a prevenir el cáncer de cuello uterino:
+    </p>
+      <ul>
+        <li>Visitar al ginecólogo / a de forma periódica</li>
+        <li>Evitar el tabaquismo</li>
+        <li>ener sexo seguro con la 
+          utilización del preservativo, el cual disminuye la posibilidad de contraer infecciones de transmisión 
+          sexual y VIH</li>
+        <li> Vacuna contra el VPH incluida dentro del Calendario Nacional de Vacunación, es gratuita y 
+          obligatoria para todas las niñas y niños a partir de los 11 años. Si ya superaste la edad de aplicación 
+          gratuita consulta con un profesional médico para que te indique si podés aplicártela de todos modos.
+          La vacuna no suplanta la realización del Papanicolau y la Colposcopía, ni el control ginecológico anual</li>
+      </ul>  
+  </div>
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-2">
+      <p class="text-muted">
+        <h5>Lalcec Cañada de Gómez</h5>
+      </p>
+    </div>
+    <div class="col mb-2">
+      <ul class="nav flex-column">
+      <li class="nav-item mb-2">
+        <a href="{% url 'website:Informacion' %}" class="nav-link p-0 text-muted">Sobre Nosotros</a>
+      </li>
+      <li class="nav-item mb-2">
+        <a href="{% url 'website:formulario' %}" class="nav-link p-0 text-muted">Donar</a>
+      </li>
+      <li class="nav-item mb-2">
+      <a href="{% url 'website:noticias' %}" class="nav-link p-0 text-muted">Noticias</a>
+    </li>
+    <li class="nav-item mb-2">
+      <a href="{% url 'website:eventos' %}" class="nav-link p-0 text-muted">Eventos</a>
+    </li>
+      </ul>
+    </div>
+    <div class="col mb-2">
+			<ul class="nav flex-column">
+				<h5>Contáctanos</h5>
+			<li class="nav-item mb-2 text-muted">
+				Teléfono : 3741-112233
+			</li>
+			<li class="nav-item mb-2 text-muted">
+				Domicilio: Calle 123
+			</li>
+			<li class="nav-item mb-2 text-muted">
+				Correo Electrónico: lalcec@gmail.com
+			</li>
+			</ul>
+		  </div>
+      <div class="col mb-2">
+      <ul class="nav flex-column">
+        <h5>Nuestras Redes</h5>
+        <li class="nav-item mb-2">
+        <a href="#" class="nav-link p-0 text-muted">Facebook</a>
+      </li>
+        <li class="nav-item mb-2">
+        <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+      </li>
+      </ul>
+      </div>
+    </footer>
+  </div>
+   
+  </body>
