@@ -1,114 +1,64 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background: #efefef;
-    font-family: 'calibri';
-  }
-  
-  header {
-    background: #ddaa03;
-    width: 100%;
-    clear: both;
-    content:'';
-    display: table;
-  }
-
-  header h1{
-    color: white;
-    font-size: 2rem;
-     text-align: center ;
-  }
-  
-  .menu {
-    width: 900px;
-    margin: 0 auto;
-  }
-  
-  img {
-    width: 120px;
-    height: 50px;
-    float: left;
-    padding: 8px;
-  
-  }
-  
-  nav {
-    font-size: 1rem;
-    text-align: center;
-  }
-  
-  nav ul li {
-    list-style: none;
-    margin-left: 75px;
-    padding: 12px 0;
-    float: left;
-    position: relative;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  nav ul li a::before {
-    display: block;
-    content: '';
-    width: 0%;
-    background: #fff;
-    height: 5px;
-    top:0;
-    position: absolute;
-    transition: width 0.3s;
-  }
-  
-  nav ul li a:hover::before {
-    width: 100%;
-  }
-
-body h2 {
-    text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+
+
+header {
+  background: #ddaa03;
+  
+  width: 100%;
+  clear: both;
+  content:'';
+  display: table;
+}
+
+header h1{
+  color: white;
+  font-size: 2rem;
+  text-align: center ;
+}
+
 
 body{
-  background-color: rgb(225, 225, 230);
-}
-.container{
- margin: auto;
- background-color: #f7f7f7;
-}
-
-.maintitle{
-  text-align: left;
-  font-size: 60px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: #eee;
+  }
+  span{
+    font-size:15px;
+  }
+  a{
+  text-decoration:none; 
   color: #ddaa03;
-}
+  border-bottom:2px solid #ddaa03;
+  }
+  .box{
+    padding:60px 0px;
+  }
+  
+  .box-part{
+    background:rgb(230, 219, 219);
+    border-radius:0;
+    padding:60px 10px;
+    margin:30px 0px;
+  }
+  .text{
+    margin:20px 0px;
+  }
+  
+  .fa{
+     color:#768394;
+  }
+  
 
-.informacion{
-  background-color: #ddaa03;
-  color: #efefef;
-  font-size: 35px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+  
 
-.subtitle{
-  text-align: left;
-  font-size: 35px;  
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  color: #c09403;
-}
-
-.texto{
-  text-align: justify;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-ul{
-  text-align: justify;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+  .hr {
+    height: 200px;
+    width: 100%;
+    margin-top: 0px;
+    padding: 10px;
+    color: #ddaa03;
+    opacity: 100%;
+  }

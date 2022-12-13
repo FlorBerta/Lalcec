@@ -1,7 +1,9 @@
 from django.contrib import admin
-from website.models import Pago, Formulario, Noticias, Eventos
+from website.models import Formulario, Noticias, Eventos
+from django.contrib.admin.models import LogEntry
 
-admin.site.register(Pago)
+LogEntry.objects.all().delete()
+
 admin.site.register(Formulario)
 admin.site.register(Noticias)
 admin.site.register(Eventos)

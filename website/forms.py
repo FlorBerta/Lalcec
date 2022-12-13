@@ -12,7 +12,6 @@ class FormularioForm(forms.ModelForm):
             'domicilio',
             'localidad',
             'telefono',
-            'pago',
         ]
         labels = {
             'id_formulario' : 'Id_Formulario',
@@ -22,7 +21,6 @@ class FormularioForm(forms.ModelForm):
             'domicilio' : 'Domicilio',
             'localidad' : 'Localidad',
             'telefono' : 'Telefono',
-            'pago' : 'Forma de Pago',
         }
         widgets = {
             'id_formulario' : forms.NumberInput(attrs={'class':'forms-control'}),
@@ -32,7 +30,6 @@ class FormularioForm(forms.ModelForm):
             'domicilio' : forms.TextInput(attrs={'class':'forms-control'}),
             'localidad' : forms.TextInput(attrs={'class':'forms-control'}),
             'telefono' : forms.NumberInput(attrs={'class':'forms-control'}),
-            'pago' : forms.CheckboxSelectMultiple(),
         }
 
 class NoticiasForm(forms.ModelForm):

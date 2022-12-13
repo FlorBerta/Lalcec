@@ -2,14 +2,6 @@ from django.db import models
 from datetime import datetime
 from ckeditor.fields import RichTextField
 
-
-#Checkbox método de pago
-class Pago(models.Model):
-    metodo = models.CharField(max_length=10)
-
-    def __str__(self):
-        return'{}'.format(self.metodo)
-
 #Formulario para solicitar ser socio/a
 class Formulario(models.Model):
     id_formulario = models.AutoField(primary_key=True)
@@ -20,14 +12,13 @@ class Formulario(models.Model):
     domicilio = models.CharField(max_length=50)
     localidad = models.CharField(max_length=50)
     telefono = models.IntegerField()
-    pago = models.ManyToManyField(Pago, blank=True)
 
     class Meta():
         verbose_name = 'Formulario'
         verbose_name_plural = 'Formularios'
 
     def __str__(self):
-        return self.id_formulario
+        return self.apellido
 
 #Subir nueva noticia
 class Noticias(models.Model):

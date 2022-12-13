@@ -7,22 +7,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href= "{% static 'css/home.css' %}">
+  <link rel="stylesheet" href="{% static 'css/formulario.css' %}">
   <title>Donar</title>
   
 </head>
 
 <body>
-    <div class="offset-md-1">
+  <div class="section-title">
+    <h2 class="h1">Formulario para solicitar ser socio/a de Lalcec Cañada de Gómez</h2>
+    <p class="h2">Completa el siguiente formulario, desde Lalcec nos pondremos en contacto para concretar la forma y el método de pago. </p>
+    <h3>Se solicita a LALCEC Cañada de Gómez como socio/a a: </h3>
 
-    <p><div className="primerEncabezado">Completa el siguiente formulario para sumarte como socio/a. En breve estaremos en contacto. ¡Gracias!</div></p>
-    <p><div className="segundoEncabezado">Se solicita a LALCEC Cañada de Gómez como socio/a a:</div></p>
-    
-    <form method="post">
+  </div>
+
+    <form method="post" class="form">
         {% csrf_token %}
         {{form.as_p}}
 
-        <button className="btnResetar" type="reset" class="btn btn-danger">Borrar Formulario</button>
+        <button className="btnResetar" type="reset" class="btn btn-danger">Limpiar Formulario</button>
         <button className="btnEnviar" type="submit" class="btn btn-primary">Enviar Solicitud</button>
     </form>
     <div class="container">
@@ -55,10 +57,10 @@
           Teléfono : 3741-112233
         </li>
         <li class="nav-item mb-2 text-muted">
-          Domicilio: Calle 123
+          Domicilio: Sarmiento 148
         </li>
         <li class="nav-item mb-2 text-muted">
-          Correo Electrónico: lalcec@gmail.com
+          Correo Electrónico: contacto@lalcec.org.ar
         </li>
         </ul>
         </div>
@@ -66,15 +68,14 @@
         <ul class="nav flex-column">
           <h5>Nuestras Redes</h5>
           <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-muted">Facebook</a>
+          <a href="https://www.facebook.com/alcec.canadadegomez/" class="nav-link p-0 text-muted">Facebook</a>
         </li>
           <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+          <a href="https://www.instagram.com/lalceccdadegomez/?hl=es-la" class="nav-link p-0 text-muted">Instagram</a>
         </li>
         </ul>
         </div>
       </footer>
     </div>
 </body>
-</html>
-{% endblock %}
+  {% endblock %}

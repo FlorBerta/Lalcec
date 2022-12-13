@@ -1,4 +1,6 @@
+{% extends 'layout.html' %}
 {% load static %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,32 +9,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 	
 	<link rel="stylesheet" href= "{% static 'css/cuelloutero.css' %}">
-  <title>Cáncer Cuello de Útero</title>
-  
+  <title>Cáncer cuello de útero</title>
+
 </head>
-<header>	
-    <!-- Barra de Navegacion -->
-    <div class="menu">
-      <!-- <img src="img/logo.jpg" alt=""> -->
-      <h1>Lalcec Cañada De Gomez</h1>
-      <nav>
-        <ul>
-          <li><a href="{% url 'website:Home' %}">Inicio</a></li>
-          <li><a href="{% url 'website:Informacion' %}">¿Quienes Somos?</a></li>
-          <li><a href="{% url 'website:noticias' %}">Noticias</a></li>
-          <!-- Revisar el hipervinculo de contacto cuando este listo -->
-          <li><a href="{% url 'website:eventos' %}">Eventos</a></li>
-          <li><a href="{% url 'website:formulario' %}">Donar</a></li>
-      </ul>
-      </nav>
-    </div>
-  </header>
 
 <body>
   <div class="container">
     <h1 class="maintitle">Cáncer de Cuello de Útero</h1>
 
-    <p class="informacion">¿Sabías que el 93% de los casos de Cáncer de útero se pueden prevenir realizando un control ginecológico anual?</p>
+    <em><h3 class="informacion">¿Sabías que el 93% de los casos de Cáncer de útero se pueden prevenir realizando un control ginecológico anual?</h3></em>
     
     <h2 class="subtitle">¿Qué es?</h2>
     <p class="texto">El cáncer de cuello de útero, a veces denominado "cáncer cervical" o "cáncer de cervix", 
@@ -77,7 +62,7 @@
       <ul>
         <li>Visitar al ginecólogo / a de forma periódica</li>
         <li>Evitar el tabaquismo</li>
-        <li>ener sexo seguro con la 
+        <li>Tener sexo seguro con la 
           utilización del preservativo, el cual disminuye la posibilidad de contraer infecciones de transmisión 
           sexual y VIH</li>
         <li> Vacuna contra el VPH incluida dentro del Calendario Nacional de Vacunación, es gratuita y 
@@ -116,10 +101,10 @@
 				Teléfono : 3741-112233
 			</li>
 			<li class="nav-item mb-2 text-muted">
-				Domicilio: Calle 123
+				Domicilio: Sarmiento 148
 			</li>
 			<li class="nav-item mb-2 text-muted">
-				Correo Electrónico: lalcec@gmail.com
+				Correo Electrónico: contacto@lalcec.org.ar
 			</li>
 			</ul>
 		  </div>
@@ -127,10 +112,10 @@
       <ul class="nav flex-column">
         <h5>Nuestras Redes</h5>
         <li class="nav-item mb-2">
-        <a href="#" class="nav-link p-0 text-muted">Facebook</a>
+        <a href="https://www.facebook.com/alcec.canadadegomez/" class="nav-link p-0 text-muted">Facebook</a>
       </li>
         <li class="nav-item mb-2">
-        <a href="#" class="nav-link p-0 text-muted">Instagram</a>
+        <a href="https://www.instagram.com/lalceccdadegomez/?hl=es-la" class="nav-link p-0 text-muted">Instagram</a>
       </li>
       </ul>
       </div>
@@ -138,3 +123,4 @@
   </div>
    
   </body>
+  {% endblock %}
